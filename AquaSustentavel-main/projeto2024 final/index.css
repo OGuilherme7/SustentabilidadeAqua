@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFF;
+    --green: #5daf61;
+    --tamanho-paragrafo: 1.2rem;
+    --altura-paragrafo: 1.6rem;
+}
+
+header {
+    background-color: #003cff;
+    padding: 1.8rem 0;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+}
+
+main {
+    margin: 5rem 3rem;
+}
+
+.welcome-one {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-one span {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-one p {
+    width: 50%;
+    font-size: var(--tamanho-paragrafo);
+    line-height: var(--altura-paragrafo);
+}
+
+.welcome-one img {
+    width: 20%;
+}
+
+.welcome-two {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.welcome-two img {
+    width: 500px;
+}
+
+.welcome-two p {
+    width: 50%;
+    font-size: var(--tamanho-paragrafo);
+    padding: 4rem 0;
+    line-height: var(--altura-paragrafo);
+}
+
+#button-next {
+    background-color: #003cff;
+    color: rgb(255, 255, 255);
+    padding: 0.9rem 1.3rem;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    margin-left: 90%;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color:#003cff;
+    height: 5rem;
+}
+
+
+

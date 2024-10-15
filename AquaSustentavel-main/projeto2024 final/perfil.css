@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #003cff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.titulo a {
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    max-width: 40px;
+}
+
+
+
+
+.nav-items img {
+    width: 40px; 
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-items img:hover {
+    opacity: 0.6;
+}
+
+.logo-icon img {
+    width: 40px; 
+    height: 40px;
+    display: block;
+}
+
+.logo-icon img:hover {
+    opacity: 0.8;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu span {
+    background: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #004d40;
+    transition: left 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.nav-links.active {
+    left: 0;
+}
+
+.nav-links li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #b2dfdb;
+    padding-left: 10px;
+}
+
+.nav-links li::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    background: #003cff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.nav-links li:hover::before {
+    background: white;
+}
+
+
+.menu-user {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 90%;
+    min-width: 8rem;
+    background-color: #1e1e1e;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+}
+
+.menu-user a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu-line {
+    margin: 0.5rem 0;
+    height: 1px;
+    background-color: rgb(70, 69, 69);
+}
+
+.menu-user li {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    color: rgb(226, 225, 225);
+}
+
+.menu-user li:hover {
+    background-color: #0e0d0d;
+}
+
+.show {
+    display: block;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 7%;
+}
+
+h1 {
+    text-align: center;
+    color: #003CFF;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #003CFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #002BBF;
+}
+
+.toggle-password {
+    cursor: pointer;
+    color: #003CFF;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.delete-account {
+    background-color: red;
+}
+
+.delete-account:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 15px;
+    }
+
+    .button {
+        padding: 8px;
+    }
+}
+
+.erros {
+    display: block;
+    color: red;
+    text-align: center;
+    margin-bottom: 0.5rem;
+} 
+
+.sucesso {
+    background-color: rgb(37, 219, 37);
+}
+
+footer {
+    background-color: #003cff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}

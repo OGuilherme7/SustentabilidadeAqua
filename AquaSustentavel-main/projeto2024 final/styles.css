@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #003cff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.titulo a {
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    max-width: 40px;
+}
+
+
+
+
+.nav-items img {
+    width: 40px; 
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-items img:hover {
+    opacity: 0.6;
+}
+
+.logo-icon img {
+    width: 40px; 
+    height: 40px;
+    display: block;
+}
+
+.logo-icon img:hover {
+    opacity: 0.8;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu span {
+    background: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #004d40;
+    transition: left 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.nav-links.active {
+    left: 0;
+}
+
+.nav-links li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #b2dfdb;
+    padding-left: 10px;
+}
+
+.nav-links li::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    background: #003cff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.nav-links li:hover::before {
+    background: white;
+}
+
+main {
+    flex: 1;
+    padding: 80px 20px 20px;
+    background-color: #e0f2f1;
+}
+
+.section-content {
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: #003cff;
+    margin-bottom: 15px;
+}
+
+
+h1 a{
+    text-decoration: none;
+    color: #003cff;
+}
+
+footer {
+    background-color: #003cff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#quizzes {
+    position: fixed;
+    top: 15%;
+    left: 2vw;
+    width: 200px;
+    padding: 15px;
+    background-color: #003cff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.interactive-aside:hover {
+    transform: scale(1.05);
+}
+
+.botaoasside {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 200px 15px;
+    background-color: #0059ff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.menu-user {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 90%;
+    min-width: 8rem;
+    background-color: #1e1e1e;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+}
+
+.menu-user a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu-line {
+    margin: 0.5rem 0;
+    height: 1px;
+    background-color: rgb(70, 69, 69);
+}
+
+.menu-user li {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    color: rgb(226, 225, 225);
+}
+
+.menu-user li:hover {
+    background-color: #0e0d0d;
+}
+
+.show {
+    display: block;
+}
+
+

@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.contato{
+  display:flex;
+  border: 2px solid reds;
+  justify-content:center;
+  align-items: center ;
+  height: 95vh;
+  background-color:#ecf0f1 ;
+}
+
+  .content{
+    background-color: #fff;
+    border-radius:15px;
+    width: 940px;
+    height: 40%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+.first-content{
+  display: flex;
+}
+  .content::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(blue,rgb(108, 165, 231));
+    width: 40%;
+    height: 100%;
+  }
+  .titulo{
+    color: #fff;
+    font-size:29px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .titulo2-second{
+    color: #003cff;
+  }
+  .descricao{
+    font-weight: 300;
+    color: #fff ;
+    line-break: 30px;
+    font-size: 12px;
+  }
+.descricao-primaria{
+  color:#fff;
+}
+.descricao-second{
+  color:#7f8c8d;
+}
+  .button{
+   border-radius: 15px;
+   text-transform: uppercase;
+   color: #fff;
+   padding:10px 50px ;
+   cursor: pointer;
+   font-weight: bold;
+   width: 150px;
+   align-self:center;
+   border-width: 0;
+
+  }
+ .button-primaria{
+  background-color: transparent;
+  border: 1px solid #fff ;
+ }
+ .button-primaria:hover{
+  background-color: #fff;
+  color: #003cff;
+ }
+ .button-second{
+  background-color: #003cff;
+  border: 1px solid #003cff;
+ }
+ .button-second:hover{
+  background-color: #fff;
+  border: #003cff;
+  color: #003cff;
+ }
+ .first-column{
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 10;
+ }
+  .second-column{
+    flex:  2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.list-redessociais{
+  display: flex;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+
+}
+.formulario input{
+  height: 45px;
+  border: none;
+  background-color:#ecf0f1;
+  margin: 14px;
+   
+
+}
+
+ 
+.second-content{
+  position: absolute;
+  display: none;
+}
+
+.erros {
+  color: red;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+

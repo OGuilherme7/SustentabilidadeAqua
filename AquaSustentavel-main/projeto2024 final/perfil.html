@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário - Aqua Sustentável</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+<header> 
+    <nav>
+        <div class="nav-container">
+            <div class="logo-icon">
+                <img src="logomarca.png" alt="Logo">
+            </div>
+
+            <div class="titulo">
+                <a>Aqua Sustentável</a>
+            </div>
+
+            <div class="nav-items">
+                <img src="icone.png" alt="Login" id="icon-menu">
+                <ul class="menu-user">
+                    <a href="perfil.html">
+                        <li>Perfil</li>
+                    </a>
+                    <a href="">
+                        <li>Login</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>Cadastre-se</li>
+                    </a>
+                    <div id="menu-line"></div>
+                    <a>
+                        <li>Sair</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Perfil do Usuário</h1>
+
+    <div class="section">
+        <label for="username">Nome:</label>
+        <input type="text" id="username" placeholder="Seu Nome">
+        <button class="button" data-input="nome">Alterar Nome</button>
+    </div>
+
+    <div class="section">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" placeholder="Sua Senha">
+        <span class="toggle-password" onclick="togglePassword()">Mostrar</span>
+        <button class="button" data-input="senha">Alterar Senha</button>
+    </div>
+
+    <div class="section">
+        <label for="profile-image">Imagem de Perfil:</label>
+        <input type="file" id="profile-image" accept="image/*">
+    </div>
+
+    <span class="erros"></span>
+
+    <div class="section">
+        <button class="button delete-account" onclick="excluirConta()">Excluir Conta</button>
+    </div>
+</div>
+
+<footer> 
+    <div class="footer-content">
+        <p>&copy; 2024 Aqua Sustentável. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="perfil.js"></script>
+
+</body>
+</html>
